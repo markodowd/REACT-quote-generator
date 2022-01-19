@@ -23,9 +23,9 @@ function App() {
   }
 
   const tweetQuote = () => {
-    const twitterUrl = `https://twitter.com/intent/tweet?text=${quote.text} - ${
-      quote.author ? quote.author : 'Unknown'
-    }`
+    const twitterUrl = `https://twitter.com/intent/tweet?text=${
+      quote?.text
+    } - ${quote?.author ? quote.author : 'Unknown'}`
     window.open(twitterUrl, '_blank')
   }
 
